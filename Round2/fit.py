@@ -109,8 +109,8 @@ if args.reuse:
     log("REUSE configs %s" % {k: v[0] for k, v in choice.items()})
 else:
     HLS = (40.0, 120.0) if args.quick else (15.0, 30.0, 60.0, 120.0, 0.0)
-    MULTS = (1.0, 3.0) if args.quick else (0.05, 0.1, 0.25, 0.5, 1.0, 2.0)
-    MINTS = (0.5, 2.0) if args.quick else (0.1, 0.3, 1.0, 3.0, 10.0)
+    MULTS = (1.0, 3.0) if args.quick else (0.002, 0.005, 0.01, 0.03, 0.1, 0.25)
+    MINTS = (0.5, 2.0) if args.quick else (0.3, 1.0, 3.0)
     register_auto_configs(args.prior_splits)
     summary = {}     # config -> {"short": params+ratio, "long": params+ratio}
     grid_log = []
