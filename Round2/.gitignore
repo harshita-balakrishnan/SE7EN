@@ -1,0 +1,5 @@
+public/
+*.zip
+*Zone.Identifier
+UPLOAD*/
+__pycache__/
